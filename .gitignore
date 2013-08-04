@@ -1,1 +1,7 @@
+# Jekyll Temporary Files
 _site
+
+# Emacs Temporary Files
+*~
+\#*\#
+.\#*
