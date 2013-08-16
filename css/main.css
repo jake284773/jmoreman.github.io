@@ -73,17 +73,52 @@ a:hover {
     color: #333;
 }
 
-h2, h3, h4, h5, h6 {
-    color: #151515;
+h2 a, h3, h4, h5, h6 {
     font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif;
+    color: #151515;
 }
 
 article h2 { 
     font-size: 2em;
+    margin-bottom: 5px;
+}
+
+article h2 a:hover {
+    background: transparent;
 }
 
 article {
     font-size: 1.125em;
     line-height: 1.7;
     color: #353535;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+p.post-date {
+    margin-top: 0;
+}
+
+ul.post-tags {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.post-tags li {
+    font-style: oblique;
+    display: inline-block;
+}
+
+ul.post-tags li , ul.post-tags li a {
+    color: #999;
+}
+
+ul.post-tags li a:hover {
+    color: #4d82d6;
+    background: transparent;
 }

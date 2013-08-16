@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<article class="post-full">
+  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <p class="post-date"><i class="icon-calendar"></i> {{ page.date | date: "%-d %B %Y" }}</p>
+
+  {{ content }}
+
+  <ul class="post-tags">
+    {% for tag in page.tags %}
+    {% if forloop.index > 1 %}
+    <li>&middot;</li>
+    {% endif %}
+    <li><a href="/tags/#{{ tag  }}-ref">#{{ tag  }}</a></li>
+    {% endfor %}
+  </ul>
+</article>
