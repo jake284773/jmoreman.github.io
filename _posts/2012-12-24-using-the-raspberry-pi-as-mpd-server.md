@@ -38,9 +38,6 @@ The raspberry pi was using the Arch Linux distribution so the first thing I did 
 ```
 $ sudo pacman -S mpd
 ```
-[Google](http://www.google.co.uk)
-
-
 
 Once that had finished I then opened the mpd config file (`/etc/mpd.conf`). Below is the config file I have with just the main things I changed without any of the comments.
 
