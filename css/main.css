@@ -140,3 +140,11 @@ ul#posts-archive h3 {
 
 ul#posts-archive h4 { margin: 0 0 0 20px; font-size: 1.15em; }
 ul#posts-archive li { margin: -33px 0 33px 155px; }
+
+pre {
+  font: 0.9em "Source Code Pro", Menlo, Courier New, monospace;
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 1em;
+  overflow: auto;
+}
