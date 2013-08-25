@@ -73,7 +73,7 @@ a:hover {
     color: #333;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h2 a, h3, h4, h5, h6 {
     font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif;
     color: #151515;
 }
@@ -127,3 +127,16 @@ ul.post-tags li a:hover {
 ul#tags, ul#tags li ul { list-style-type: none; }
 ul#tags li h3 { margin-bottom: 0; }
 ul#tags li ul { padding-top :0; }
+
+ul#posts-archive {
+  padding-left: 0;
+}
+
+ul#posts-archive h3 {
+  margin: 0;
+  font: 1.5em "Source Code Pro", Menlo, Courier New, monospace;
+  color: #555;
+}
+
+ul#posts-archive h4 { margin: 0 0 0 20px; font-size: 1.15em; }
+ul#posts-archive li { margin: -33px 0 33px 155px; }
