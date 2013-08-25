@@ -35,13 +35,13 @@ This was the most important step of the setup as it is the core component of the
 
 The raspberry pi was using the Arch Linux distribution so the first thing I did was use pacman to install mpd.
 
-```
+```bash
 $ sudo pacman -S mpd
 ```
 
 Once that had finished I then opened the mpd config file (`/etc/mpd.conf`). Below is the config file I have with just the main things I changed without any of the comments.
 
-```
+```bash
 music_directory     "/var/lib/mpd/music"
 playlist_directory  "/var/lib/mpd/playlists"
 db_file             "/var/lib/mpd/mpd.db"
@@ -55,7 +55,7 @@ zeroconf_enabled    "yes"
 zeroconf_name       "Raspberry Pi Music Player"
 
 input {
-plugin "curl"
+  plugin "curl"
 }
 
 audio_output {
@@ -74,26 +74,26 @@ As part of configuring the MPD server the NFS share on the home server has to be
 So, the first step was to install a program called autofs. It is a auto-mounting program for network shares and removable devices. With it, I do not need to worry about having to manually mounting the NFS share from the home server.
 The installation is accomplished through the normal way:
 
-```
+```bash
 $ sudo pacman -S autofs
 ```
 
 Once that is done, the next step is to load the autofs4 kernel module. This is achieved through the normal way with modprobe:
 
-```
+```bash
 $ sudo modprobe autofs4
 ```
 
 Now would be a good time to include this module in a `modules.load.d` file. Here is my `/etc/modules.load.d/autofs` file for loading this kernel module automatically in the future:
 
-```
+```bash
 # Load autofs4 on boot
 autofs4
 ```
 
 Now that the kernel module is setup properly, the next step would be to check the configuration for autofs. Open up the `/etc/autofs/auto.master` file in your preferred text editor and then make sure that the following line is included:
 
-```
+```bash
 /net -hosts --timeout=60
 ```
 
@@ -101,14 +101,14 @@ Now that the kernel module is setup properly, the next step would be to check th
 
 As all the configuration for autofs is now complete, the final step is to enable and start the autofs service. This is accomplished by running the following:
 
-```
+```bash
 $ sudo systemctl enable autofs.service
 $ sudo systemctl start autofs.service
 ```
 
 Now if you go to the following directory by `cd`, you should see the contents of the NFS share. For example:
 
-```
+```bash
 $ cd /net/[nfs-server-hostname]/[nfs-share-name]
 $ cd /net/microserver/media
 ```
@@ -116,7 +116,7 @@ $ cd /net/microserver/media
 #### MPD Permission Setup and Initial Folder Creation ####
 The next step or stage I went with was to create the necessary folders for MPD to function correctly and setup the permissions for these folders to what they should be. This was done as follows:
 
-```
+```bash
 # If /var/log/mpd doesn't exist
 $ sudo mkdir /var/log/mpd
 
@@ -132,7 +132,7 @@ $ sudo gpasswd -a mpd audio
 
 From here, the next step would be to create a symbolic link betwen the nfs server folder and the mpd music folder. In my case it was just running the following:
 
-```
+```bash
 $ sudo ln -s /net/microserver/media/Lossy_ogg /var/lib/mpd/music
 ```
 
@@ -141,7 +141,7 @@ $ sudo ln -s /net/microserver/media/Lossy_ogg /var/lib/mpd/music
 #### MPD Service Enable and Start ####
 From here, I think MPD shall be setup correctly for the daemon to be started. With systemctl, I enabled and started the mpd service as follows:
 
-```
+```bash
 $ sudo systemctl enable mpd.service
 $ sudo systemctl start mpd.service
 ```
@@ -151,7 +151,7 @@ To be sure that MPD does perform a scan of the music folder, I decided to manual
 
 So if you haven't already installed it, do so through pacman. (`sudo pacman -S mpc`) Once that is done, you'll be able to run the following command to initiate the manual library scan:
 
-```
+```bash
 $ mpc update
 ```
 
@@ -167,13 +167,13 @@ As the Raspberry Pi has an audio out jack, it was simply just a case of plugging
 
 Except, there may be one extra thing. In the default installation of Arch Linux for the raspberry pi, the sound card kernel module isn't loaded automatically. Load the module through the standard way:
 
-```
+```bash
 $ sudo modprobe snd_bcm2835
 ```
 
 You may also want to create a `modules-load.d` file with the following contents:
 
-```
+```bash
 # Load the sound card module for the broadcom chip on the rapi
 snd_bcm2835
 ```
