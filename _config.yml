@@ -1,3 +1,32 @@
 name: Jake Moreman
 markdown: redcarpet
 pygments: true
+permalink: /:year/:month/:day/:title
+
+prose:
+  media: "assets"
+  rootdir: "_posts"
+  siteurl: "http://jakemoreman.co.uk"
+  
+  site:
+    tags: "http://jakemoreman.co.uk/resources/tags.json"
+    
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+          
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          alterable: true
+          options: "http://jakemoreman.co.uk/resources/tags.json"
