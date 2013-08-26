@@ -15,3 +15,8 @@ I spend a fair deal of my time doing programming so it was important for me to s
 
    Upon reviewing all of these features it would seem it has all the features I need. However in practice they weren't that sweet. There's certainly a lot of things that need to be ironed out.
 
+   The first problem is how creating and saving files can sometimes time out or get renamed wrongly. This was quite annoying and sometimes the only solution was to reload the page.
+   
+   The second problem is that the terminal is too slow for my liking. There is far too much latency. I don't know if this is a common problem but it might be just because of my location in the world - the UK. Their servers are in America. Whatever the reason behind it is, it greatly hinders my productivity and making it bit useless really. Sometimes the terminal doesn't even respond and requires a page reload like the first problem I've mentioned.
+   
+   All in all Cloud9 looks good from the face of things but in practice doesn't quite match up. This might not be the same for everyone but that's how it's felt for me anyway. This isn't just with the Chromebook either. I experienced the same problems when on a standard modern desktop machine.
