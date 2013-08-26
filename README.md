@@ -1,4 +1,4 @@
-# jakemoreman.github.io
+# jmoreman.github.io
 
 This is the source code to my personal website. It's powered by [Jekyll](http://github.com/mojombo/jekyll), a static-site generator.
 
