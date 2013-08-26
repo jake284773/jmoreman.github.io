@@ -29,4 +29,4 @@ prose:
           element: "multiselect"
           label: "Tags"
           alterable: true
-          options: "http://jakemoreman.co.uk/resources/tags.jsonp"
+          options: "http://jakemoreman.co.uk/resources/tags.jsonp?callback=tags"
