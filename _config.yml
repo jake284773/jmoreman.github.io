@@ -3,6 +3,7 @@ url: "http://jakemoreman.co.uk"
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:day/:title
+exclude: ['Gemfile*', 'README.md']
 
 prose:
   media: "assets"
