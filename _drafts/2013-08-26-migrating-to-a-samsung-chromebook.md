@@ -2,6 +2,7 @@
 layout: post
 published: false
 title: Migrating to a Samsung Chromebook
+date: "2013-08-26 20:30"
 ---
 
 Over the past month or so I've been trying to migrate to the Samsung Chromebook for most of my activities. And although it has it's limitations it is surprisingly effective for all my productive tasks. Here's just an overview on how I've managed to make it my main computer.
