@@ -23,10 +23,3 @@ prose:
         field:
           element: "hidden"
           value: "post"
-          
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Tags"
-          alterable: true
-          options: "http://jakemoreman.co.uk/resources/tags.jsonp?callback=tags"
