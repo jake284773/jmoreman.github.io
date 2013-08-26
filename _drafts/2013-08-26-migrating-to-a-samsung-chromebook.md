@@ -25,4 +25,10 @@ I spend a fair deal of my time doing programming so it was important for me to s
    
 - **Codenvy** - This one is a bit different to Cloud9 as it's slightly less flexible but seems to be more stable. The first thing I noticed was how integrated it was to deployment to cloud PaaS providers. It also has good support for Java development which Cloud9 didn't have.
 
-   Unfortunately Codenvy doesn't have full terminal access. Only one that gives access to virtual commands which basically act as an alias to the functions in the IDE. This was quite a big problem for me because I often need to run UNIX commands as part of my development workflow. With that in mind, I kept looking on.
+   Unfortunately Codenvy doesn't have full terminal access. Only one that gives access to virtual commands which basically act as an alias to the functions in the IDE. This was quite a big problem for me because I often need to run UNIX commands as part of my development workflow.
+   
+- **ShiftEdit** - This one was probably the most different compared to the previous two. Mainly because it supports working offline in Chrome and it doesn't have workspaces on their servers. Instead you connect to existing _'sites'_ via FTP, Google Drive, Dropbox, WebDAV etc. This also means that you will be modifying the files directly without any version control. So that was a no go to begin with.
+
+   What really got be interested in this one was it's offline support. Unfortunately that wasn't a show stopper either. Initially I wasn't instantly able to work out how to make use of the offline mode support. At the time of writing, the documentation on this feature was a bit flakey. I came across a video about it but that was outdated. The interface had changed since. Even though I could eventually work out how it worked, it was still disappointing how unclear it was. Setting it up is rather tedious because you have to manually select each individual file you want to make available for offline editing. To me this seemed ridiculous. Why can't you just select a folder? Syncing the offline edits back aren't automatic either.
+   
+   All in all I was quite disappointed with ShiftEdit and can't say I'd recommend it. Maybe improvements will be made in the future. But I'm not sure whether I will ever see it comparable to the others.
