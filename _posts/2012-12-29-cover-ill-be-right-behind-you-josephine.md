@@ -2,7 +2,7 @@
 layout: post
 title: "Cover Song: I'll Be Right Behind You Josephine (Original Artist: Josh Woodward)"
 date: 2012-12-29 22:30
-categories:
+tags:
 - music
 - covers
 - video
