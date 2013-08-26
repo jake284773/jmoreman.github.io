@@ -1,4 +1,5 @@
 name: Jake Moreman
+url: "http://jakemoreman.co.uk"
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:day/:title
