@@ -148,5 +148,5 @@ pre {
   padding: 1em;
   overflow: auto;
   word-wrap: normal;
-  white-space: nowrap;
+  white-space: pre;
 }
