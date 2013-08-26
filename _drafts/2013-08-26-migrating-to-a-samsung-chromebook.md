@@ -32,3 +32,15 @@ I spend a fair deal of my time doing programming so it was important for me to s
    What really got be interested in this one was it's offline support. Unfortunately that wasn't a show stopper either. Initially I wasn't instantly able to work out how to make use of the offline mode support. At the time of writing, the documentation on this feature was a bit flakey. I came across a video about it but that was outdated. The interface had changed since. Even though I could eventually work out how it worked, it was still disappointing how unclear it was. Setting it up is rather tedious because you have to manually select each individual file you want to make available for offline editing. To me this seemed ridiculous. Why can't you just select a folder? Syncing the offline edits back aren't automatic either.
    
    All in all I was quite disappointed with ShiftEdit and can't say I'd recommend it. Maybe improvements will be made in the future. But I'm not sure whether I will ever see it comparable to the others.
+   
+- **Nitrous.IO** - This one is probably the newest out of them all. Surprisingly it seemed like it would be the one that is the nearest to my requirements. The primary feature that it boasts is how you are given a full non-root Linux terminal access pre-installed with development tools (depending on which template you choose). It also has a code editor with a file explorer. 
+
+   The best thing about Nitrous was that the built-in terminal was so much more responsive than Cloud9. For me this would make it superior as this is such an important feature to me. If I wanted to I could ignore the code editor and just use VIM in a terminal for all my editing needs.
+   
+   The code editor isn't perfect but I don't expect it to be considering it's an early project still in public beta. The minor issues I have are: fixed colour palette, supported file types could be bigger, and no word wrap functionality. These don't usually impede on productivity. Except the word wrap when dealing with lots of plain text.
+   
+In the end I decided that Nitrous.IO will be the one that I'll be using for the majority of my coding when using the Chromebook.
+
+#### What about offline functionality?
+
+As you might have guessed Nitrous.IO is useless when I don't have an internet connection. But this isn't a dead end. There is a possible solution to this - [enable developer mode](http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/samsung-arm-chromebook#TOC-Entering-Developer-Mode) and use [crouton](http://github.com/dnschneid/crouton/).
