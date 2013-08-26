@@ -6,8 +6,6 @@ permalink: /:year/:month/:day/:title
 exclude: ['Gemfile*', 'README.md']
 
 prose:
-  media: "assets"
-  rootdir: "_posts"
   siteurl: "http://jakemoreman.co.uk"
   
   site:
