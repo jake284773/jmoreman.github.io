@@ -35,12 +35,20 @@ I spend a fair deal of my time doing programming so it was important for me to s
    
 - **Nitrous.IO** - This one is probably the newest out of them all. Surprisingly it seemed like it would be the one that is the nearest to my requirements. The primary feature that it boasts is how you are given a full non-root Linux terminal access pre-installed with development tools (depending on which template you choose). It also has a code editor with a file explorer. 
 
-   The best thing about Nitrous was that the built-in terminal was so much more responsive than Cloud9. For me this would make it superior as this is such an important feature to me. If I wanted to I could ignore the code editor and just use VIM in a terminal for all my editing needs.
+   The best thing about Nitrous is how responsive the built-in terminal is. For me this would make it superior to Cloud9 as it's such an important feature to me. If I wanted to I could ignore the code editor completely and just use VIM in a terminal for all my editing needs.
    
-   The code editor isn't perfect but I don't expect it to be considering it's an early project still in public beta. The minor issues I have are: fixed colour palette, supported file types could be bigger, and no word wrap functionality. These don't usually impede on productivity. Except the word wrap when dealing with lots of plain text.
+   The code editor isn't perfect but I don't expect it to be considering it's an early project still in public beta. The minor issues I have are: fixed colour palette, supported file types could be bigger, and no word wrap functionality. These don't usually impede on productivity. Except the word wrap when dealing with lots of text, like this post.
    
 In the end I decided that Nitrous.IO will be the one that I'll be using for the majority of my coding when using the Chromebook.
 
 #### What about offline functionality?
 
 As you might have guessed Nitrous.IO is useless when I don't have an internet connection. But this isn't a dead end. There is a possible solution to this - [enable developer mode](http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/samsung-arm-chromebook#TOC-Entering-Developer-Mode) and use [crouton](http://github.com/dnschneid/crouton/).
+
+##### Crouton and Developer Mode
+
+Crouton is a tool that makes it easy to create an Ubuntu chroot environment on a Chromebook. This is really useful if you need a normal Linux environment without having to make changes to the Chrome OS. You can even have XFCE installed and running alongside Chrome OS!
+
+Of course even though it makes the Chromebook highly productive without an internet connection, it is slightly risky security-wise. All because you have to enable developer mode. Developer mode makes it possible to write to the root file system on the Chromebook and gives you access to a standard bash shell. The trouble is the shell is accessible even in the guest account. Yes you can password protect the user account used by the shell so that sudo access requires a password. But it is still no where near as secure with developer mode disabled.
+
+At the moment this is a price I'm willing to pay especially since physical security of the device is likely to be more of an issue than anything else. If I was connected to the internet more often when I'm doing work, maybe I wouldn't bother with developer mode.
