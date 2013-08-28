@@ -147,11 +147,21 @@ ul#posts-archive li a {
 
 ul#posts-archive li a:hover { color: #4d82d6; }
 
-ul#posts-archive li span.post-date {
+ul#posts-archive li a>span.post-date {
   float: right;
+}
+
+ul#posts-archive li a span.post-date {
   text-transform: uppercase;
   font-size: 12px;
   padding: 5px 0;
+  display: none;
+}
+
+@media screen and (min-width: 705px) {
+  ul#posts-archive li a span.post-date {
+    display: inline;
+  }
 }
 
 ul#posts-archive li {
