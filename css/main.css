@@ -1,5 +1,5 @@
 body {
-    font: 16px "Bitter", Georgia, Times New Roman, serif;
+    font: 16px Helvetica, Arial, freesans, sans-serif;
     color: #333;
 }
 
@@ -40,11 +40,7 @@ nav li a:hover {
     color: #fff;
 }
 
-nav ul li { 
-    font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif; 
-}
-
-header h1 { font: 2.6em "Source Sans Pro", Helvetica, Verdana, sans-serif; }
+header h1 { font-size: 2.6em; }
 
 header h1 a, header h1 a:hover {
     text-decoration: none;
@@ -73,10 +69,7 @@ a:hover {
     color: #333;
 }
 
-h2, h2 a, h3, h4, h5, h6 {
-    font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif;
-    color: #151515;
-}
+h2, h2 a, h3, h4, h5, h6 { color: #151515; }
 
 article h2 { 
     font-size: 2em;
@@ -134,7 +127,7 @@ ul#posts-archive {
 
 ul#posts-archive h3 {
   margin: 0;
-  font: 1.5em "Source Code Pro", Menlo, Courier New, monospace;
+  font: 1.5em 'DejaVu Sans Mono', 'Everson Mono', FreeMono, Menlo, Consolas, Terminal, monospace;
   color: #555;
 }
 
@@ -142,7 +135,7 @@ ul#posts-archive h4 { margin: 0 0 0 20px; font-size: 1.15em; }
 ul#posts-archive li { margin: -33px 0 33px 155px; }
 
 pre {
-  font: 0.9em "Source Code Pro", Menlo, Courier New, monospace;
+  font: 0.9em 'DejaVu Sans Mono', 'Everson Mono', FreeMono, Menlo, Consolas, Terminal, monospace;
   background: #eee;
   border: 1px solid #ddd;
   padding: 1em;
