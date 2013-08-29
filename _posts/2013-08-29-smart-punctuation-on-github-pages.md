@@ -13,4 +13,12 @@ Things that it can do include:
 - Dashes: `--` and `---` into en and em dashes.
 - Elipses: From three consecutive dots `...`.
 
+To enable this feature you need to be using the rdiscount engine with the `smart` extension enabled set in `_config.yml` Below is an example.
+
+```yaml
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+```
+
 I find this incredibly useful and convenient as it means I don't have to fiddle about finding the appropriate HTML characters in order to make the text look better.
