@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Smart Punctuation on GitHub Pages
 ---
 
