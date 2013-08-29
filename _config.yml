@@ -1,6 +1,10 @@
 name: Jake Moreman
 url: "http://jakemoreman.co.uk"
-markdown: redcarpet
+
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+  
 pygments: true
 permalink: /:year/:month/:day/:title
 exclude: ['Gemfile*', 'README.md']
