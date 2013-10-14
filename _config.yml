@@ -11,9 +11,6 @@ exclude: ['Gemfile*', 'README.md']
 
 prose:
   siteurl: "http://jakemoreman.co.uk"
-  
-  site:
-    tags: "http://jakemoreman.co.uk/resources/tags.json"
     
   metadata:
     _posts:
@@ -27,3 +24,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
+          
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          options: 'http://jakemoreman.co.uk/resources/tags.jsonp'
+          alterable: true
